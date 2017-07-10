@@ -1,0 +1,5 @@
+platform :ios, "7.0"
+target 'OLImageViewDemo' do
+pod "AFNetworking/UIKit"
+
+end

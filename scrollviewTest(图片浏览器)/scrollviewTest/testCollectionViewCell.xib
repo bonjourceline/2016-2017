@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="testCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="305"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="305"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P95-TR-AZy">
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="305"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u0S-hD-7i4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="RxT-yh-F4r"/>
+                                    <constraint firstAttribute="width" constant="166" id="Ykf-ct-CqR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RxT-yh-F4r"/>
+                                        <exclude reference="Ykf-ct-CqR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="RxT-yh-F4r"/>
+                                        <include reference="Ykf-ct-CqR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44216665309999997" green="1" blue="0.9565294124" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u0S-hD-7i4" secondAttribute="trailing" id="KFk-80-zSN"/>
+                            <constraint firstItem="u0S-hD-7i4" firstAttribute="leading" secondItem="P95-TR-AZy" secondAttribute="leading" id="SPm-Mq-Mbw"/>
+                            <constraint firstItem="u0S-hD-7i4" firstAttribute="top" secondItem="P95-TR-AZy" secondAttribute="top" id="f5d-T7-ls1"/>
+                            <constraint firstAttribute="bottom" secondItem="u0S-hD-7i4" secondAttribute="bottom" id="tFk-VW-Cy7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KFk-80-zSN"/>
+                                <exclude reference="SPm-Mq-Mbw"/>
+                                <exclude reference="f5d-T7-ls1"/>
+                                <exclude reference="tFk-VW-Cy7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="KFk-80-zSN"/>
+                                <include reference="SPm-Mq-Mbw"/>
+                                <include reference="f5d-T7-ls1"/>
+                                <include reference="tFk-VW-Cy7"/>
+                            </mask>
+                        </variation>
+                    </scrollView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P95-TR-AZy" secondAttribute="bottom" id="1CH-BQ-2O9"/>
+                <constraint firstItem="P95-TR-AZy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cMu-Rh-BwX"/>
+                <constraint firstItem="P95-TR-AZy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="siz-I2-RsX"/>
+                <constraint firstAttribute="trailing" secondItem="P95-TR-AZy" secondAttribute="trailing" id="sna-9I-BVu"/>
+            </constraints>
+            <size key="customSize" width="258" height="305"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1CH-BQ-2O9"/>
+                    <exclude reference="cMu-Rh-BwX"/>
+                    <exclude reference="siz-I2-RsX"/>
+                    <exclude reference="sna-9I-BVu"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="1CH-BQ-2O9"/>
+                    <include reference="cMu-Rh-BwX"/>
+                    <include reference="siz-I2-RsX"/>
+                    <include reference="sna-9I-BVu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="height" destination="RxT-yh-F4r" id="eZ5-ks-ZZm"/>
+                <outlet property="iconImageView" destination="u0S-hD-7i4" id="Tbv-pF-ihc"/>
+                <outlet property="scrollView" destination="P95-TR-AZy" id="V7w-hg-y29"/>
+                <outlet property="width" destination="Ykf-ct-CqR" id="nXf-CK-baL"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="226.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
